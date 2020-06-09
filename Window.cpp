@@ -88,6 +88,7 @@ bool Window::intialize() {
 	}
 
 	glEnable(GL_DEPTH_TEST);
+
 	glViewport(0, 0, glBufferWidth, glBufferHeight);
 	glfwSetWindowUserPointer(window, this);
 

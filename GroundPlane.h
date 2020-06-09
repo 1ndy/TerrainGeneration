@@ -7,7 +7,7 @@ class GroundPlane
 {
 public:
 	GroundPlane();
-	GroundPlane(GLfloat x, GLfloat z);
+	GroundPlane(GLfloat x, GLfloat z, GLuint divisions);
 
 	void createMesh();
 
@@ -16,6 +16,7 @@ public:
 	~GroundPlane();
 private:
 	GLfloat width, length;
+	GLuint divisions; //per unit
 	GLint numVertices;
 	GLint numIndices;
 	GLfloat* mesh;

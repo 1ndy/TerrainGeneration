@@ -43,7 +43,7 @@ void Gui::showTerrainControls() {
 		ImGui::BeginTabBar("Controller");
 
 		if (ImGui::BeginTabItem("Terrain")) {
-			ImGui::SliderFloat("Height Scalar", &height_scalar, 0.0f, 100.0f);
+			ImGui::SliderFloat("Height Scalar", &height_scalar, 0.0f, 200.0f);
 			ImGui::SliderFloat("Noise Scalar", &noise_scalar, 0.0f, 1.0f);
 			ImGui::SliderFloat("Steepness", &steepness_exp, 0.0f, 3.0f);
 			ImGui::SliderFloat("X Offset", &x_offset, -1000.0f, 1000.0f);

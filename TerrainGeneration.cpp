@@ -16,7 +16,7 @@ int main()
     Shader ls = Shader();
     Window w = Window((char*)"Terrain Explorer", 1280, 720, length, width);
     w.intialize();
-    GroundPlane gp = GroundPlane(length, width);
+    GroundPlane gp = GroundPlane(length, width, 12);
     
     gp.createMesh();
     if (!ls.loadShaderCode(vert_fname, geo_fname, frag_fname)) {
